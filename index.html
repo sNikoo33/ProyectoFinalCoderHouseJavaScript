@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMarket</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="scss/estilos.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2fb71d6bef.js" crossorigin="anonymous"></script>
+    <!-- Font Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light py-4 shadow-sm">
+
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="./images/LogoMyMarket.png" width="150px">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#mas" class="nav-link">Nuestra variedad</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link">Envios</a>
+                    </li>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><i class="fa-solid fa-basket-shopping"></i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Productos -->
+    <main>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 40%;">
+            <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table class="table">
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                        <tr id="footer">
+                            <th scope="row" colspan="5">No hay nada en el carrito!</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <template id="template-footer">
+                <th scope="row" colspan="2">Productos N°</th>
+                <td>10</td>
+                <td>
+                    <button class="btn btn-dark btn-sm" id="clear-cart">
+                        Comprar
+                    </button>
+                </td>
+                <td class="font-weight-bold">$<span>5000</span></td>
+            </template>
+            <template id="template-cart">
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button class="btn btn-outline-success btn-sm">+</button>
+                        <button class="btn btn-outline-danger btn-sm">-</button>
+                    </td>
+                    <td>$ <span>500</span></td>
+                </tr>
+            </template>
+        </div>
+        
+        <div class="container">
+            <div class="row" id="cards"></div>
+        </div>
+
+        <div class="row justify-content-center align-items-center text-center gap-5 m-5" id="items"></div>
+
+        <template id="template-card">
+            <div class="col-xl-4 p-3 mt-5 bg-body rounded" style="width: 15rem;">
+
+                <a href=""><img src="" class="card-img-top"></a>
+
+                <div class="card-body m-3 text-center">
+                    <h5 class="card-title mb-3"></h5>
+                    <p class="card-text fw-bold mb-3"></p>
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-basket-shopping"></i></a>
+                </div>
+            </div>
+        </template>
+
+        <!-- Extra // "Tambien tenemos...!" -->
+
+        <div class="container">
+
+            <h2 id="mas" class="text-center mb-5" style="font-size:3rem;">Tambien tenemos...</h2>
+
+            <div class="row justify-content-center align-items-center text-center gap-5">
+
+                <div class="card col-xl-4 shadow-lg mb-3 py-2 bg-body rounded" style="width: 18rem;">
+                    <a href="catalogo.html"><img src="./images/mixvegetal.jpg" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h2 class="card-title">Mix Vegetal</h2>
+                    </div>
+                </div>
+
+                <div class="card col-xl-4 shadow-lg mb-3 py-2 bg-body rounded" style="width: 18rem;">
+                    <a href="catalogo.html"><img src="./images/Bakery.jpg" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h2 class="card-title">Bakery Time!</h2>
+                    </div>
+                </div>
+
+                <div class="card col-xl-4 shadow-lg mb-3 py-2 bg-body rounded" style="width: 18rem;">
+                    <a href="catalogo.html"><img src="./images/readytoeat.jpg" class="card-img-top"></a>
+                    <div class="card-body">
+                        <h2 class="card-title">Ready to eat</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Envios -->
+
+    <div class="container mt-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2 class="text-center mt-3" style="font-size:3rem;">Envio gratis a todo Mar del Plata!</h2>
+                <img src="./images/5227.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black py-5 mt-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Encontranos</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2">
+                        <p class="fw-light py-2">
+                            Avenida Colon 1825, <br>
+                            Mar del Plata, Buenos Aires <br>
+                            Argentina, 7600CP <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2">
+                        <p class="fw-light py-2">
+                            <b class="fw-bold">Email:</b> MyMarketMDP@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Nuestras Redes Sociales</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2">
+                        <i class="fa fa-instagram px-3"></i>
+                        <i class="fa fa-facebook px-3"></i>
+                        <i class="fa fa-twitter px-3"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-bold mb-3">Horario</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2">
+                        <p>
+                            Lunes a Sabado --> 9:00hs a 22:00hs
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- SweetAlert -->
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

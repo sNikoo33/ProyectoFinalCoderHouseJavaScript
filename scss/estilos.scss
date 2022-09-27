@@ -1,0 +1,26 @@
+////////////////////////
+//Variables de colores//
+////////////////////////
+
+$principal:#00f2a9;
+$secondary:#232323;
+
+//////////////////////////
+///Variables Bootstrap///
+/////////////////////////
+$primary:$principal;
+$secondary:$secondary;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn{
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h2{
+    font-family: 'Caveat', cursive;
+}

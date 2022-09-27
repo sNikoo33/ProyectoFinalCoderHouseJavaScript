@@ -1,0 +1,106 @@
+[
+    {
+        "price": 150,
+        "id": 1,
+        "title": "CocaCola",
+        "image": "/images/cocacola.png"
+    },
+
+    {
+        "price": 150,
+        "id": 2,
+        "title": "Fanta",
+        "image": "/images/fanta.png"
+    },
+
+    {
+        "price": 150,
+        "id": 3,
+        "title": "Sprite",
+        "image": "/images/sprite.png"
+    },
+
+    {
+        "price": 100,
+        "id": 4,
+        "title": "Agua Mineral",
+        "image": "/images/aguamineral.png"
+    },
+
+    {
+        "price": 215,
+        "id": 5,
+        "title": "Leche",
+        "image": "/images/leche.png"
+    },
+
+    { 
+        "price": 300,
+        "id": 6,
+        "title": "Cif",
+        "image": "/images/cif.png"
+    },
+
+    {
+        "price": 145,
+        "id": 7,
+        "title": "Harina",
+        "image": "/images/harina.png"
+    },
+
+    {
+        "price": 96,
+        "id": 8,
+        "title": "Sal fina",
+        "image": "/images/sal.png"
+    },
+
+    {
+        "price": 90,
+        "id": 9,
+        "title": "Pure de tomate",
+        "image": "/images/puredetomate.png"
+    },
+    
+    {
+        "price": 350,
+        "id": 10,
+        "title": "Doritos",
+        "image": "/images/doritos.png"
+    },
+
+    {
+        "price": 340,
+        "id": 11,
+        "title": "Cheetos",
+        "image": "/images/cheetos.png"
+    },
+
+    {
+        "price": 190,
+        "id": 12,
+        "title": "Dulce de leche",
+        "image": "/images/ddl.png"
+    },
+
+    {
+        "price": 100,
+        "id": 13,
+        "title": "Manteca",
+        "image": "/images/manteca.png"
+    },
+    
+    {
+        "price": 250,
+        "id": 14,
+        "title": "Mayonesa",
+        "image": "/images/mayo.png"
+    },
+    
+    {
+        "price": 180,
+        "id": 15,
+        "title": "Mostaza",
+        "image": "/images/mostaza.png"
+    }
+]
